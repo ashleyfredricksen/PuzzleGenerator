@@ -84,6 +84,7 @@ def save_to_pdf(grid, words, filename, word_positions=None, include_word_list=Tr
     if word_positions:
         c.setStrokeColorRGB(0, 0, 0)  # Black color for outlining the word
         c.setLineWidth(2)
+        corner_radius = 10 # Radius for rounded corners
         for word, positions in word_positions:
             start_pos = positions[0]
             end_pos = positions[-1]
@@ -93,9 +94,9 @@ def save_to_pdf(grid, words, filename, word_positions=None, include_word_list=Tr
             end_y_pos = start_y - end_pos[0] * cell_size
 
             if start_pos[0] == end_pos[0]:  # Horizontal word
-                c.rect(start_x_pos - 6, start_y_pos - font_size + 14, cell_size * len(word), font_size + 2, fill=0)
+                c.roundRect(start_x_pos - 6, start_y_pos - font_size + 14, cell_size * len(word), font_size + 2, corner_radius, fill=0)
             else:  # Vertical word
-                c.rect(start_x_pos - 6, end_y_pos + 14 - cell_size, cell_size, cell_size * len(word), fill=0)
+                c.roundRect(start_x_pos - 6, end_y_pos + 14 - cell_size, cell_size, cell_size * len(word), corner_radius, fill=0)
 
     # Write list of words if include_word_list is True
     if include_word_list:
