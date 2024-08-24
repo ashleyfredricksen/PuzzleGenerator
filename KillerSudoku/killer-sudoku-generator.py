@@ -24,9 +24,9 @@ def generate_sudoku(difficulty):
     if difficulty == 'easy':
         no_of_holes = random.randint(28, 36)
     elif difficulty == 'medium':
-        no_of_holes == random.randint(37,45)
+        no_of_holes = random.randint(37,45)
     elif difficulty == 'hard':
-        no_of_holes == random.randint(46, 54)
+        no_of_holes = random.randint(46, 54)
     else:
         raise ValueError("Invalid difficulty level")
 
@@ -211,7 +211,7 @@ def main():
             puzzles.append(puzzle)
             solutions.append(solution)
     
-        create_pdf(puzzles, solutions, "killer_sudoku_puzzles5.pdf", "killer_sudoku_solutions5.pdf")
+        create_pdf(puzzles, solutions, "killer_sudoku_puzzles.pdf", "killer_sudoku_solutions.pdf")
         print(f"{num_puzzles} Sudoku puzzles generated and saved successfully!")
 
     except ValueError:
