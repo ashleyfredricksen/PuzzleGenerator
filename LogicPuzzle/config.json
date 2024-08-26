@@ -1,0 +1,162 @@
+{
+  "categories": {
+    "Color": [
+      "Red",
+      "Blue",
+      "Yellow",
+      "Green",
+      "Purple",
+      "Orange",
+      "Pink",
+      "Brown"
+    ],
+    "Animal": [
+      "Dog",
+      "Cat",
+      "Elephant",
+      "Tiger",
+      "Lion",
+      "Giraffe",
+      "Zebra",
+      "Kangaroo"
+    ],
+    "Fruit": [
+      "Apple",
+      "Banana",
+      "Orange",
+      "Grape",
+      "Mango",
+      "Pineapple",
+      "Strawberry",
+      "Blueberry"
+    ],
+    "Sport": [
+      "Soccer",
+      "Basketball",
+      "Tennis",
+      "Swimming",
+      "Baseball",
+      "Golf",
+      "Hockey",
+      "Volleyball"
+    ],
+    "City": [
+      "New York",
+      "Paris",
+      "Tokyo",
+      "London",
+      "Sydney",
+      "Rome",
+      "Berlin",
+      "Dubai"
+    ],
+    "Book Genre": [
+      "Fiction",
+      "Non-Fiction",
+      "Mystery",
+      "Fantasy",
+      "Science Fiction",
+      "Biography",
+      "Romance",
+      "Thriller"
+    ],
+    "Vehicle": [
+      "Car",
+      "Bike",
+      "Bus",
+      "Train",
+      "Boat",
+      "Airplane",
+      "Scooter",
+      "Truck"
+    ],
+    "Cuisine": [
+      "Italian",
+      "Chinese",
+      "Mexican",
+      "Indian",
+      "French",
+      "Japanese",
+      "Thai",
+      "Mediterranean"
+    ],
+    "Animal Habitat": [
+      "Forest",
+      "Desert",
+      "Ocean",
+      "Savannah",
+      "Jungle",
+      "Arctic",
+      "Mountain",
+      "Urban"
+    ],
+    "Technology": [
+      "Smartphone",
+      "Laptop",
+      "Tablet",
+      "Smartwatch",
+      "Camera",
+      "Drone",
+      "Headphones",
+      "Printer"
+    ],
+    "Holiday": [
+      "Christmas",
+      "Halloween",
+      "Thanksgiving",
+      "Easter",
+      "New Year",
+      "Valentine's Day",
+      "Independence Day",
+      "Hanukkah"
+    ],
+    "Beverage": [
+      "Coffee",
+      "Tea",
+      "Juice",
+      "Soda",
+      "Water",
+      "Wine",
+      "Beer",
+      "Smoothie"
+    ]
+  },
+  "clue_templates": {
+    "positive": [
+      "{name1} owns the {item1}.",
+      "{name1} enjoys {item1} the most.",
+      "{item1} belongs to {name1}.",
+      "{name1} lives in the {item1}.",
+      "{name1} enjoys {item1} the most.",
+      "The {item1} is associated with {name1}.",
+      "{name1} drives a {item1}.",
+      "{name1} likes {item1} and dislikes {item2}.",
+      "{name1} chose the {item1}.",
+      "The {item1} is {name1}'s favorite."
+    ],
+    "negative": [
+      "{name1} does not like {item1}.",
+      "{item1} is not associated with {name1}.",
+      "{name1} does not own the {item1}.",
+      "The {item1} does not belong to {name1}.",
+      "{name1} would never choose the {item1}.",
+      "{name1} avoids {item1}.",
+      "{name1} does not live in the {item1}.",
+      "{name1} doesn't drive a {item1}.",
+      "{item1} is not {name1}'s preference.",
+      "{name1} is not interested in {item1}."
+    ],
+    "exclusive": [
+      "If {name1} has the {item1}, they do not have the {item2}.",
+      "The {item1} and {item2} are not associated with the same person.",
+      "{name1} prefers {item1}, but not {item2}.",
+      "The person who likes {item1} does not like {item2}.",
+      "{item1} is not with {name1}; instead, {item2} is.",
+      "{name1} lives in the {item1}, not the {item2}.",
+      "If {name1} enjoys {item1}, then they avoid {item2}.",
+      "{name1} drives a {item1}, but not a {item2}.",
+      "The person with the {item1} does not own the {item2}.",
+      "If {item1} is {name1}'s choice, then {item2} is not."
+    ]
+  }
+}
